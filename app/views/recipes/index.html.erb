@@ -1,11 +1,11 @@
-<h1 style="color: pink;">My Recipe Book</h1>
+<h1 style="color: #DA4CCF;">My Recipe Book</h1>
 <br />
 <h6><%= link_to 'New Recipe', new_recipe_path %></h6>
 <br />
 
 <% @recipes.each do |recipe| %>
   <div>
-    <h3><%= recipe.name %></h3><br />
+    <h3 style="color: #D29CCE"><%= recipe.name %></h3><br />
     <h5><%= recipe.description %></h5><br />
     <p><%= recipe.ingredients %></p><br />
     <p><%= recipe.directions %></p><br />
