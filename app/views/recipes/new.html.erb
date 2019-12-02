@@ -1,0 +1,15 @@
+<div>
+  <h1>Enter Your Recipe</h1>
+    <%= simple_form_for @recipe do |f| %>
+      <%= f.input :name %>
+      <br />
+      <%= f.input :description %>
+      <br />
+      <%= f.input :ingredients %>
+      <br />
+      <%= f.input :directions %>
+      <br />
+      <br />
+      <%= f.submit 'Create' %>
+    <% end %>
+</div>
