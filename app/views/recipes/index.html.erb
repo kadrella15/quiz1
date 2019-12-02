@@ -1,9 +1,9 @@
 <h1 style="color: pink;">Recipe Book</h1>
-
+<br />
 <% @recipes.each do |recipe| %>
   <div>
-    <h2><%= recipe.name %></h2><br />
-    <h3><%= recipe.description %></h3><br />
+    <h3><%= recipe.name %></h3><br />
+    <h5><%= recipe.description %></h5><br />
     <p><%= recipe.ingredients %></p><br />
     <p><%= recipe.directions %></p><br />
   </div>
