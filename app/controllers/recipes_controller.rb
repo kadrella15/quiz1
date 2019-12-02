@@ -7,5 +7,14 @@ class RecipesController < ApplicationController
     @recipe = Recipe.new
   end
 
+  def create
+    Recipe.create(recipe_params)
+    redirect_to root_path
+  end
 
+  private
+
+  def recipe_params
+    params.require(:recipe).permit(:name, :description, :ingredients, :directions)
+  end
 end
